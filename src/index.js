@@ -9,9 +9,9 @@ const upload = require("./config/upload");
 
 const app = express();
 
-db.hasConnection();
-
 app.use(cors());
+
+db.hasConnection();
 
 app.use(express.json());
 
